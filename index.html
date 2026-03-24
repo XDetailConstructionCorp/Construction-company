@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="bTXWxBZleKdmB-Na6aj5LLTxjhrN_tBRbl3GDibyiIw" />
+    <title>X Detail Construction Corp | Premium Builders East Walpole</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --orange: #ff5e00;
+            --dark: #1a1a1a;
+            --light-bg: #fcfcfc;
+            --border: #eeeeee;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: #ffffff; 
+            color: var(--dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* --- CLEAN HEADER --- */
+        header {
+            position: fixed;
+            top: 0; width: 100%; z-index: 1000;
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .h-container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 0 40px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .logo { 
+            font-family: 'Syncopate', sans-serif; 
+            font-size: 0.85rem; 
+            letter-spacing: 1px; 
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .logo span { color: var(--orange); }
+
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav ul li a { 
+            color: var(--dark); 
+            text-decoration: none; 
+            font-size: 0.7rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: var(--orange); }
+
+        /* --- LIGHT HERO SECTION --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--light-bg);
+            padding: 120px 40px 60px;
+        }
+
+        .hero-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .hero-h1 { 
+            font-family: 'Syncopate', sans-serif; 
+            font-size: clamp(2.5rem, 5vw, 4rem); 
+            line-height: 1.1; 
+            margin-bottom: 25px;
+            color: var(--dark);
+        }
+        .hero-h1 span { color: var(--orange); }
+
+        .hero-desc { 
+            color: #666; 
+            font-size: 1.1rem; 
+            max-width: 520px; 
+            margin-bottom: 50px; 
+        }
+
+        /* --- MODERN CONTACT GRID --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid var(--border);
+            background: #fff;
+            margin-bottom: 40px;
+        }
+
+        .c-item { padding: 25px; border-right: 1px solid var(--border); }
+        .c-item:last-child { border: none; }
+        .c-item label { 
+            display: block; 
+            color: var(--orange); 
+            font-size: 0.6rem; 
+            letter-spacing: 2px; 
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+        .c-item a, .c-item span { 
+            color: var(--dark); 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 0.85rem;
+        }
+
+        .btn-black {
+            background: var(--dark);
+            color: #fff;
+            padding: 20px 45px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 0.75rem;
+        }
+        .btn-black:hover { background: var(--orange); transform: translateY(-3px); }
+
+        /* --- HERO IMAGE (YANDEX IMG) --- */
+        .hero-img-box {
+            position: relative;
+            height: 650px;
+            width: 100%;
+            background: url('https://avatars.mds.yandex.net/get-altay/7368569/2a00000182f81acc7a84d2a726c0fe1e0949/orig') center/cover;
+            box-shadow: 30px 30px 0px var(--orange);
+        }
+
+        @media (max-width: 1000px) {
+            .hero-inner { grid-template-columns: 1fr; text-align: center; }
+            .hero-img-box { height: 400px; margin-top: 40px; box-shadow: 15px 15px 0px var(--orange); }
+            .contact-grid { grid-template-columns: 1fr; }
+            .c-item { border-right: none; border-bottom: 1px solid var(--border); }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="h-container">
+            <a href="#" class="logo">X DETAIL <span>CONSTRUCTION CORP.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-h1">Built with<br><span>Precision.</span></h1>
+                <p class="hero-desc">High-end residential remodeling and commercial construction services in East Walpole, MA.</p>
+                
+                <div class="contact-grid">
+                    <div class="c-item">
+                        <label>DIRECT LINE</label>
+                        <a href="tel:6173194949">(617) 319-4949</a>
+                    </div>
+                    <div class="c-item">
+                        <label>LOCATION</label>
+                        <span>East Walpole, MA</span>
+                    </div>
+                </div>
+
+                <a href="#services" class="btn-black">Explore Our Work</a>
+            </div>
+
+            <div class="hero-img-box"></div>
+        </div>
+    </section>
+
+</body>
+</html>
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="about-grid">
+            
+            <div class="about-content">
+                <h2 class="about-title">About <span>X Detail</span> Construction Corp.</h2>
+                <p class="about-text">
+                    Located in East Walpole, Massachusetts, we are dedicated to transforming visions into structural reality with expert <a href="https://maps.app.goo.gl/6ywbwra2ko43oiLt5" style="color: inherit; text-decoration: none;">construction and remodeling services</a>. Our team specializes in home remodeling, custom construction, renovations, and structural upgrades, ensuring every project reflects precision engineering with high-end aesthetics.
+                </p>
+                
+                <div class="about-features">
+                    <div class="feat-card">
+                        <div class="feat-icon">01</div>
+                        <div>
+                            <h4>Precision Detail</h4>
+                            <p>Every corner and finish is handled with expert-level craftsmanship.</p>
+                        </div>
+                    </div>
+                    <div class="feat-card">
+                        <div class="feat-icon">02</div>
+                        <div>
+                            <h4>Local Expertise</h4>
+                            <p>Serving the East Walpole community with reliable and professional solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-visual">
+                <div class="about-img-box">
+                    <div class="location-stamp">
+                        <strong>MA</strong>
+                        <span>East Walpole</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* ABOUT CSS - Windows Optimized */
+    .about {
+        padding: 120px 40px;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .about-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .about-title {
+        font-family: 'Syncopate', sans-serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #1a1a1a;
+    }
+    .about-title span { color: #ff5e00; }
+
+    .about-text {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 45px;
+        max-width: 550px;
+    }
+
+    .about-features {
+        display: grid;
+        gap: 30px;
+    }
+
+    .feat-card {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .feat-icon {
+        background: #f8f8f8;
+        color: #ff5e00;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 0.8rem;
+        border: 1px solid #eee;
+        flex-shrink: 0;
+    }
+
+    .feat-card h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        color: #1a1a1a;
+    }
+
+    .feat-card p {
+        font-size: 0.9rem;
+        color: #888;
+    }
+
+    /* About Image Styling with your new link */
+    .about-img-box {
+        height: 550px;
+        width: 100%;
+        background: url('https://avatars.mds.yandex.net/i?id=5c15c4f504ce36c2156ddf7fae7f2066015182d7-16417692-images-thumbs&n=13') center/cover;
+        position: relative;
+        border: 1px solid #eee;
+    }
+
+    .location-stamp {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        background: #1a1a1a;
+        color: #fff;
+        padding: 25px 35px;
+        text-align: center;
+        z-index: 2;
+    }
+    .location-stamp strong { font-family: 'Syncopate'; font-size: 1.4rem; display: block; color: #ff5e00; }
+    .location-stamp span { font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+
+    @media (max-width: 1000px) {
+        .about-grid { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+        .about-text { margin: 0 auto 45px; }
+        .feat-card { flex-direction: column; align-items: center; }
+        .about-visual { height: 400px; margin-top: 30px; }
+        .location-stamp { left: 50%; transform: translateX(-50%); bottom: -20px; }
+    }
+</style>
+<section id="services" class="premium-services">
+    <div class="p-container">
+        <div class="p-header">
+            <h2 class="p-title">Core <span>Specialties</span></h2>
+            <p class="p-subtitle">Focused expertise in high-end residential and commercial development, delivering expert <a href="https://www.google.com/search?kgmid=/g/11n4bdch79" style="color: inherit; text-decoration: none;">construction and remodeling services</a> with a commitment to precision, durability, and modern design.</p>
+        </div>
+
+        <div class="p-flex-layout">
+            
+            <div class="p-item">
+                <div class="p-img-overlay" style="background-image: url('https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="p-content">
+                    <span class="p-num">01</span>
+                    <h3>Kitchen & Bath <br>Remodeling</h3>
+                    <p>Bespoke interior transformations focusing on premium finishes and structural precision.</p>
+                </div>
+            </div>
+
+            <div class="p-item">
+                <div class="p-img-overlay" style="background-image: url('https://avatars.mds.yandex.net/i?id=06bf20bb6b069bd913fcf8dcad0babf244aebb3f-5211891-images-thumbs&n=13');"></div>
+                <div class="p-content">
+                    <span class="p-num">02</span>
+                    <h3>Structural <br>Construction</h3>
+                    <p>From custom decks and porches to full-scale site development and safe demolition.</p>
+                </div>
+            </div>
+
+            <div class="p-item">
+                <div class="p-img-overlay" style="background-image: url('https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="p-content">
+                    <span class="p-num">03</span>
+                    <h3>Architectural <br>Finishing</h3>
+                    <p>Expert painting, seamless drywall installation, and precision flooring for a refined look.</p>
+                </div>
+            </div>
+
+            <div class="p-item">
+                <div class="p-img-overlay" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="p-content">
+                    <span class="p-num">04</span>
+                    <h3>Professional <br>Installation</h3>
+                    <p>Certified window replacements, secure TV mounting, and high-standard electrical solutions.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Premium Services Styling */
+    .premium-services { padding: 100px 40px; background: #ffffff; }
+    .p-container { max-width: 1400px; margin: 0 auto; }
+    .p-header { margin-bottom: 60px; }
+    .p-title { font-family: 'Syncopate', sans-serif; font-size: 2.5rem; text-transform: uppercase; margin: 0; color: #1a1a1a; }
+    .p-title span { color: #ff5e00; }
+    .p-subtitle { color: #888; font-size: 1rem; margin-top: 10px; }
+
+    .p-flex-layout { display: flex; gap: 15px; height: 500px; }
+
+    .p-item {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        background: #222; 
+        display: flex;
+        align-items: flex-end;
+        padding: 35px;
+        transition: flex 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .p-img-overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        filter: grayscale(100%);
+        transition: 0.6s ease;
+    }
+
+    .p-content { position: relative; z-index: 2; width: 100%; }
+    .p-num { font-family: 'Syncopate'; font-size: 0.7rem; color: #ff5e00; display: block; margin-bottom: 15px; }
+    .p-item h3 { font-size: 1.3rem; color: #fff; text-transform: uppercase; margin-bottom: 15px; line-height: 1.2; }
+    .p-item p { color: #eee; font-size: 0.85rem; opacity: 0; transform: translateY(20px); transition: 0.4s; max-width: 250px; }
+
+    /* Hover State */
+    .p-item:hover { flex: 2.5; }
+    .p-item:hover .p-img-overlay { opacity: 0.8; filter: grayscale(0%); transform: scale(1.05); }
+    .p-item:hover p { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+
+    @media (max-width: 900px) {
+        .p-flex-layout { flex-direction: column; height: auto; }
+        .p-item { height: 350px; flex: none; }
+        .p-item p { opacity: 1; transform: translateY(0); }
+    }
+</style>
+<section id="why-us" class="why-us">
+    <div class="w-container">
+        <div class="w-grid">
+            
+            <div class="w-content">
+                <h2 class="w-title">Why <span>Choose</span> Us</h2>
+                <p class="w-subtitle">We don't just build structures; we build trust through detail-oriented craftsmanship.</p>
+                
+                <div class="w-features">
+                    <div class="w-feat-item">
+                        <div class="w-icon">✓</div>
+                        <div class="w-text">
+                            <h4>Precision Craftsmanship</h4>
+                            <p>Every corner, joint, and finish is handled with expert-level attention to detail.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-feat-item">
+                        <div class="w-icon">✓</div>
+                        <div class="w-text">
+                            <h4>Local Reliability</h4>
+                            <p>Proudly serving the East Walpole community with dependable and professional solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-feat-item">
+                        <div class="w-icon">✓</div>
+                        <div class="w-text">
+                            <h4>Modern Aesthetics</h4>
+                            <p>We specialize in high-end, contemporary designs that elevate your property's value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-visual">
+                <div class="w-img-box-new" style="background-image: url('https://avatars.mds.yandex.net/i?id=33bd45be8bdd91a025854982bdfb924ac3fcf60c-7753086-images-thumbs&n=13');">
+                    <div class="w-stat-box">
+                        <div class="w-stat">
+                            <strong>100%</strong>
+                            <span>Precision Focus</span>
+                        </div>
+                        <div class="w-stat">
+                            <strong>MA</strong>
+                            <span>East Walpole</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* WHY CHOOSE US - Windows Friendly */
+    .why-us {
+        padding: 120px 40px;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .w-container { max-width: 1400px; margin: 0 auto; }
+
+    .w-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .w-title {
+        font-family: 'Syncopate', sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #1a1a1a;
+    }
+    .w-title span { color: #ff5e00; }
+
+    .w-subtitle {
+        color: #888;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+
+    .w-features { display: grid; gap: 35px; }
+
+    .w-feat-item { display: flex; gap: 20px; align-items: flex-start; }
+
+    .w-icon {
+        background: #ff5e00;
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    .w-text h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        color: #1a1a1a;
+    }
+
+    .w-text p { font-size: 0.95rem; color: #666; line-height: 1.6; }
+
+    /* Updated Image Box */
+    .w-img-box-new {
+        height: 550px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border: 1px solid #eee;
+    }
+
+    .w-stat-box {
+        position: absolute;
+        bottom: 40px;
+        left: -40px;
+        background: #1a1a1a;
+        display: flex;
+        padding: 30px;
+        gap: 40px;
+        box-shadow: 20px 20px 0px #ff5e00;
+    }
+
+    .w-stat { text-align: center; }
+    .w-stat strong { font-family: 'Syncopate'; font-size: 1.5rem; color: #ff5e00; display: block; }
+    .w-stat span { font-size: 0.6rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
+
+    @media (max-width: 1000px) {
+        .w-grid { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+        .w-feat-item { flex-direction: column; align-items: center; }
+        .w-img-box-new { height: 400px; }
+        .w-stat-box { left: 50%; transform: translateX(-50%); bottom: -20px; width: 90%; justify-content: center; box-shadow: 10px 10px 0px #ff5e00; }
+    }
+</style>
+<section id="reviews" class="reviews">
+    <div class="r-container">
+        <div class="r-header">
+            <h2 class="r-title">Client <span>Reviews</span></h2>
+            <p class="r-subtitle">What our homeowners in East Walpole and surrounding areas are saying about our precision work.</p>
+        </div>
+
+        <div class="r-grid">
+            <div class="r-card">
+                <div class="r-stars">★★★★★</div>
+                <p class="r-quote">"The attention to detail on our kitchen remodel was incredible. X Detail Corp really lives up to their name. Professional, clean, and on time!"</p>
+                <div class="r-author">
+                    <strong>James M.</strong>
+                    <span>East Walpole, MA</span>
+                </div>
+            </div>
+
+            <div class="r-card">
+                <div class="r-stars">★★★★★</div>
+                <p class="r-quote">"We hired them for a custom deck and structural repair. The craftsmanship is top-tier. They transformed our backyard completely."</p>
+                <div class="r-author">
+                    <strong>Sarah L.</strong>
+                    <span>Walpole, MA</span>
+                </div>
+            </div>
+
+            <div class="r-card">
+                <div class="r-stars">★★★★★</div>
+                <p class="r-quote">"Reliable and honest. Their finishing work on our drywall and painting was flawless. Highly recommended for any high-end project."</p>
+                <div class="r-author">
+                    <strong>Robert K.</strong>
+                    <span>Norfolk County, MA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* REVIEWS CSS - Windows Optimized */
+    .reviews {
+        padding: 120px 40px;
+        background: #1a1a1a; /* Dark theme for contrast */
+        color: #fff;
+    }
+
+    .r-container { max-width: 1400px; margin: 0 auto; }
+
+    .r-header { margin-bottom: 70px; text-align: center; }
+    
+    .r-title { 
+        font-family: 'Syncopate', sans-serif; 
+        font-size: 2.5rem; 
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .r-title span { color: #ff5e00; }
+    
+    .r-subtitle { color: #888; font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+    .r-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+    }
+
+    .r-card {
+        background: #252525;
+        padding: 50px 40px;
+        border: 1px solid #333;
+        transition: 0.4s;
+    }
+
+    .r-card:hover {
+        border-color: #ff5e00;
+        transform: translateY(-10px);
+    }
+
+    .r-stars {
+        color: #ff5e00;
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    .r-quote {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #ccc;
+        font-style: italic;
+        margin-bottom: 30px;
+        min-height: 100px;
+    }
+
+    .r-author strong {
+        display: block;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .r-author span {
+        font-size: 0.75rem;
+        color: #666;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 5px;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .r-grid { grid-template-columns: 1fr; }
+        .r-title { font-size: 2rem; }
+    }
+</style>
+<section id="contact" class="contact-direct">
+    <div class="c-container">
+        <div class="c-grid">
+            
+            <div class="c-info">
+                <h2 class="c-title">Ready to Start Your <span>Project?</span></h2>
+                <p class="c-subtitle">Reach out to us directly for a professional consultation and a precise estimate. No forms, no waiting.</p>
+                
+                <div class="c-details">
+                    <a href="tel:6173194949" class="c-method">
+                        <span class="c-label">Direct Line</span>
+                        <span class="c-value">(617) 319-4949</span>
+                    </a>
+
+                    <a href="mailto:xdetailconstruction1@gmail.com" class="c-method">
+                        <span class="c-label">Email Address</span>
+                        <span class="c-value">xdetailconstruction1@gmail.com</span>
+                    </a>
+
+                    <div class="c-method no-link">
+                        <span class="c-label">Office Location</span>
+                        <span class="c-value">3 Washing St, East Walpole,<br>Massachusetts 02032</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-visual-box">
+                <div class="c-box-content">
+                    <h3>X DETAIL <br><span>CORP.</span></h3>
+                    <p>Crafting high-end structural solutions with unmatched precision across Massachusetts.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .contact-direct {
+        padding: 120px 40px;
+        background: #ffffff;
+        border-top: 1px solid #eee;
+    }
+
+    .c-container { max-width: 1400px; margin: 0 auto; }
+
+    .c-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .c-title {
+        font-family: 'Syncopate', sans-serif;
+        font-size: clamp(2.2rem, 4vw, 3.2rem);
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        color: #1a1a1a;
+    }
+    .c-title span { color: #ff5e00; }
+
+    .c-subtitle {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 60px;
+        max-width: 500px;
+    }
+
+    .c-details { display: grid; gap: 40px; }
+
+    .c-method { display: block; text-decoration: none; transition: 0.3s; }
+    .c-method:not(.no-link):hover { transform: translateX(10px); }
+
+    .c-label {
+        display: block;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 0.65rem;
+        color: #ff5e00;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .c-value {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        letter-spacing: -1px;
+        line-height: 1.3;
+    }
+
+    .c-visual-box {
+        background: #1a1a1a;
+        padding: 100px 60px;
+        position: relative;
+    }
+
+    .c-visual-box::before {
+        content: "";
+        position: absolute;
+        top: 0; right: 0;
+        width: 80px; height: 80px;
+        background: #ff5e00;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+
+    .c-visual-box h3 {
+        font-family: 'Syncopate', sans-serif;
+        color: #fff;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .c-visual-box h3 span { color: #ff5e00; }
+
+    .c-visual-box p {
+        color: #888;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 1000px) {
+        .c-grid { grid-template-columns: 1fr; gap: 60px; }
+        .c-visual-box { padding: 60px 40px; }
+        .c-value { font-size: 1.3rem; }
+    }
+</style>
+<footer class="main-footer">
+    <div class="f-container">
+        
+        <div class="f-grid">
+            <div class="f-col branding">
+                <a href="#" class="f-logo">X DETAIL <span>CONSTRUCTION CORP.</span></a>
+                <p class="f-desc">Top-tier remodeling and construction services based in East Walpole. We turn visions into structural reality with absolute precision.</p>
+                <div class="f-contact-info">
+                    <p><strong>P:</strong> (617) 319-4949</p>
+                    <p><strong>E:</strong> xdetailconstruction1@gmail.com</p>
+                    <p><strong>A:</strong> 3 Washing St, East Walpole, MA 02032</p>
+                </div>
+            </div>
+
+            <div class="f-col links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="f-col map">
+                <h4>Our Location</h4>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378638.31539603206!2d-71.23327644999999!3d42.1478935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8af6291f3d3b7b75%3A0x9bbe9c4e5efe523f!2sX%20Detail%20Construction%20Corp!5e0!3m2!1sen!2s!4v1774364190436!5m2!1sen!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-bottom">
+            <p>© 2026 X Detail Construction Corp. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* FOOTER CSS - Clean & Minimal */
+    .main-footer {
+        background: #111;
+        color: #fff;
+        padding: 80px 40px 40px;
+        border-top: 1px solid #333;
+    }
+
+    .f-container { max-width: 1400px; margin: 0 auto; }
+
+    .f-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        gap: 60px;
+        margin-bottom: 50px;
+    }
+
+    .f-logo {
+        font-family: 'Syncopate', sans-serif;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .f-logo span { color: #ff5e00; }
+    
+    .f-desc { color: #888; font-size: 0.9rem; line-height: 1.6; margin-bottom: 25px; max-width: 350px; }
+    
+    .f-contact-info p { font-size: 0.85rem; color: #ccc; margin-bottom: 12px; line-height: 1.4; }
+    .f-contact-info strong { color: #ff5e00; margin-right: 8px; font-family: 'Syncopate'; font-size: 0.7rem; }
+
+    .f-col h4 {
+        font-family: 'Syncopate', sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #ff5e00;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+    }
+
+    .f-col ul { list-style: none; }
+    .f-col ul li { margin-bottom: 15px; }
+    .f-col ul li a { 
+        color: #888; 
+        text-decoration: none; 
+        font-size: 0.85rem; 
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .f-col ul li a:hover { color: #fff; padding-left: 5px; }
+
+    .map-wrapper {
+        border: 1px solid #333;
+        overflow: hidden;
+        background: #222;
+        line-height: 0;
+        border-radius: 4px;
+    }
+
+    .f-bottom {
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        text-align: center;
+        color: #555;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 1000px) {
+        .f-grid { grid-template-columns: 1fr; gap: 50px; }
+        .f-bottom { text-align: center; }
+    }
+</style>
